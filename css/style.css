@@ -17,8 +17,15 @@ div.gato{
     align-self: flex-start;
     height: 100px;
     width: 100px;
-    background: orange;
     background-image: url("/images/Tom.png");
+    border-radius: 50%;
+}
+div.raton{
+    align-self: flex-end;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    background-image: url("/images/Jerry.png");
     border-radius: 50%;
 }
 section.juego > article{
