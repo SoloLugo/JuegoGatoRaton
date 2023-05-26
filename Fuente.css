@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Lastica;
+    src: url("/fuentes/FontsFree-Net-Lastica.ttf");
+}
+@font-face {
+    font-family: TT Interphases;
+    src: url("/fuentes/FontsFree-Net-TTInterfaces-Medium.ttf");
+}
+@font-face {
+    font-family: Anonymous Pro;
+    src: url("/fuentes/AnonymousPro-Regular.ttf");
+}
+@font-face {
+    font-family: Inter;
+    src: url("/fuentes/Inter-VariableFont_slnt,wght.ttf");
+}
+body{
+    font-family: Inter;
+}
