@@ -50,13 +50,13 @@ const ctx = canvas.getContext('2d')
 
 //ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-const getPaddle = ({x=0,color='orange'}) => ({
+const getPaddle = ({x=0,color='grey'}) => ({
     x,
     y: 0,
-    w: 10,
-    h: 10,
+    w: 50,
+    h: 50,
     color,
-    speed: 10,
+    speed: 50,
     draw() {
         ctx.fillStyle = this.color
         ctx.fillRect(this.x, this.y, this.w, this.h)
@@ -94,39 +94,16 @@ const getPaddle = ({x=0,color='orange'}) => ({
         }
     }})
 
-const getBall = () => ({
-    x:145,
-    y:0,
-    w:10,
-    h:10,
-    color:'blue',
-    direction: 'right',
-    draw(){
-        if(this.direction === 'right'){
-            this.x++
-        } else {
-            this.x--
-        }
-        if(this.x > canvas.width-20) {
-            this.direction='left'
-        } else if (this.x < 10) {
-            this.direction= 'right'
-        }
-        ctx.fillStyle= this.color
-        ctx.fillRect(this.x, this.y, this.w, this.h)
-    }
-})
+
 
 const paddleLeft = getPaddle({})
 const paddleRight = getPaddle({
-    x:canvas.width-10,
-    color:'red'
+    x:canvas.width-50,
+    color:'orange'
 })
-const ball= getBall()
 
 const update = () => {
     ctx.clearRect(0,0,canvas.width,canvas.height)
-    ball.draw()
     paddleLeft.draw()
     paddleRight.draw()
     requestAnimationFrame(update)

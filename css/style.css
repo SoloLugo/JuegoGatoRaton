@@ -4,7 +4,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
+body > canvas{
+    background-color: white;
+    display: grid;
+    border: solid black;
+    grid-template-columns: repeat(6 1fr);
+}
+body > canvas > section{
+    border: solid black;
+    
+}
 section.juego{
     background-color: whitesmoke;
     border: dotted black;
