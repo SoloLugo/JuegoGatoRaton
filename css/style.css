@@ -8,12 +8,19 @@ body{
 section.juego{
     background-color: whitesmoke;
     border: dotted black;
-    height: 80vh;
-    width: 60vw;
+    height: 600px;
+    width: 600px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
-
+div.gato{
+    align-self: flex-start;
+    height: 100px;
+    width: 100px;
+    background: orange;
+    background-image: url("/images/Tom.png");
+    border-radius: 50%;
+}
 section.juego > article{
     border: double black;
 }
